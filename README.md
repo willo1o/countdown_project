@@ -24,3 +24,13 @@ fun feature for the first two options: you'll get a picture and a text after the
 - You select the appropriate event, press autofill button, and it'll start counting to that date.
 - extra feature is that you can set a picture and a text that will be displayed after the countdown goes off. The name of the images are "i_img.png" where i is the number of the option in order and the used texts are in an array at the beginning of the js file.
 
+ Few things you need to add to the codes after you downloaded it:
+- the pictures you want to display after the autofill goes down (watch out! their names must be "i_img.png" where i = place of the autofill in order from 0)
+        - they should be in the same folder as the other codes.
+- the text's you would like to display after the autofill goes down (again, watch out for the order of the texts)
+        - you can add them at the begginning of the javascript file in the texts[] array
+- the dates for the autofill
+        - same as the previous one, at the beginnning of the js file, but in the dates[] array
+
+Enjoy it!
+
