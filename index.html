@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown</title>
+  </head>
+  <body id="body">
+    <a href="https://forms.gle/Cidyd8xnE5TmKWh36" target="_blank"
+      >new autofill</a
+    >
+
+    <!--TITLE DIV-->
+    <div name="TITLE">
+      <h1>How long 'til I see my brother again?</h1>
+      <br />
+      <br />
+    </div>
+
+    <!--SELECTION TITLE DIV-->
+    <div name="selection-title">
+      <h3 id="chosen_date">Chosen date and time:</h3>
+      <br />
+      <br />
+    </div>
+
+    <!--SELECTION DIV-->
+    <div name="selection">
+      <input
+        class="data"
+        placeholder="month (Jan, Feb...)"
+        type="text"
+        onkeyup="submit(event)"
+      />
+      <input
+        class="data"
+        placeholder="day"
+        type="number"
+        onkeyup="submit(event)"
+      />
+      <input
+        class="data"
+        placeholder="year"
+        type="number"
+        onkeyup="submit(event)"
+      />
+      <input
+        class="data"
+        placeholder="time (hh::mm:ss)"
+        type="text"
+        onkeyup="submit(event)"
+      />
+    </div>
+
+    <!--BUTTON DIV-->
+    <div name="buttons">
+      <button onclick="starting()">Start</button>
+      <button onclick="reset()">Reset</button>
+      <br />
+      <br />
+    </div>
+
+    <div
+      name="line_div"
+      style="background-color: whitesmoke; height: 10px; margin-bottom: 15px"
+    ></div>
+
+    <!-- SECOND OPTION FOR CHOOSING THE DATE-->
+    <div name="second_option">
+      <input
+        type="date"
+        id="calendar"
+        aria-describedby="date-format"
+        min=""
+        max="2031-01-01"
+        ondblclick="deleter(event)"
+        onkeypress="submit(event)"
+      />
+      <input
+        type="time"
+        name="time"
+        id="time"
+        ondblclick="deleter(event)"
+        onkeypress="submit(event)"
+      />
+    </div>
+    <!-- BUTTONS 2nd OPTION DIV-->
+    <div name="buttons2">
+      <button onclick="getDateOwn()">count</button>
+    </div>
+
+    <div
+      name="line_div"
+      style="background-color: whitesmoke; height: 10px; margin-bottom: 15px"
+    ></div>
+
+    <!--AUTOFILL-->
+    <div>
+      <select name="autofill" id="autofill_select">
+        <option value="0">X-mas arrival</option>
+        <option value="1">Fejben X-mas</option>
+        <option value="2">Goodbye</option>
+        <option value="3">Summer arrival</option>
+      </select>
+      <button onclick="autofill()">autofill</button>
+    </div>
+    <!--THE COUNTDOWN DISPLAY PART DIV-->
+
+    <div name="countdown">
+      <h1 id="countdown"></h1>
+      <img src="end.png" id="bye" style="display: none" />
+    </div>
+
+    <div name="pictures" id="hide" style="display: none">
+      <h2 id="hidden_text"></h2>
+      <img id="hidden_img" src="" />
+    </div>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
