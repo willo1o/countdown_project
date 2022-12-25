@@ -31,6 +31,8 @@ fun feature for the first two options: you'll get a picture and a text after the
         - you can add them at the begginning of the javascript file in the texts[] array
 - the dates for the autofill
         - same as the previous one, at the beginnning of the js file, but in the dates[] array
+- the options in the html code, but look out, you mustn't change the value of the option, but the innerHTML of it.
+
 
 Enjoy it!
 
