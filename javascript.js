@@ -9,7 +9,7 @@ var texts = [
   "Text number 3",
 ];
 var dates = [
-  "September 1, 2023 13:55:00",
+  "December 25, 2022 23:14:00",
   "May 10, 2023 11:00:00",
   "January 30, 2023 15:25:10",
   "2023",
