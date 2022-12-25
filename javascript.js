@@ -3,16 +3,16 @@ var output = document.getElementById("countdown");
 var date = "";
 
 var texts = [
-  "Finally, this will be a welcome hug",
-  "The FEJBEN FAMILY is back together! ",
-  "Oh God, it's time to say goodbye to him again",
-  "We'll be having him for another 3 months! HURRAY!",
+  "Text number 0",
+  "Text number 1 ",
+  "Text number 2",
+  "Text number 3",
 ];
 var dates = [
-  "December 25, 2022 13:55:00",
-  "December 27, 2022 14:00:00",
-  "January 28, 2023 13:20:00",
-  "May 20, 2023",
+  "September 1, 2023 13:55:00",
+  "May 10, 2023 11:00:00",
+  "January 30, 2023 15:25:10",
+  "2023",
 ];
 
 //creating a minimum to the calendar
@@ -81,7 +81,6 @@ function starting() {
 
 function submit(event) {
   if (event.keyCode === 13) {
-    console.log("Enter lett lenyomva");
     date += event.target.value + " ";
     event.target.value = "";
 
