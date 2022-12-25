@@ -14,7 +14,7 @@
 
     <!--TITLE DIV-->
     <div name="TITLE">
-      <h1>How long 'til I see my brother again?</h1>
+      <h1>How long 'til...</h1>
       <br />
       <br />
     </div>
@@ -74,7 +74,6 @@
         id="calendar"
         aria-describedby="date-format"
         min=""
-        max="2031-01-01"
         ondblclick="deleter(event)"
         onkeypress="submit(event)"
       />
@@ -99,10 +98,10 @@
     <!--AUTOFILL-->
     <div>
       <select name="autofill" id="autofill_select">
-        <option value="0">X-mas arrival</option>
-        <option value="1">Fejben X-mas</option>
-        <option value="2">Goodbye</option>
-        <option value="3">Summer arrival</option>
+        <option value="0">Event 0</option>
+        <option value="1">Event 1</option>
+        <option value="2">Event 2</option>
+        <option value="3">Event 3</option>
       </select>
       <button onclick="autofill()">autofill</button>
     </div>
